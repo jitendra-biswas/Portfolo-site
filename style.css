@@ -322,6 +322,10 @@ button:hover{
             padding-right: 20px;
             line-height: 2.3vh;
         }
+
+        .icon a i{
+            gap: 50px;
+        }
     
     }
 
@@ -353,6 +357,10 @@ button:hover{
         width: 80vw;
         margin-left: 50px;
         margin-top: 50px;
+    }
+
+    .footer a{
+        margin-top: 100px;
     }
 
     .footer .logo h2{
