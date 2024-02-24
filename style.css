@@ -356,10 +356,14 @@ button:hover{
     }
 
     .footer .logo h2{
-        font-size: 3.5vmin;
+        font-size: 4.5vmin;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: 500;
 
+    }
+
+    .footer .logo .color{
+        font-size: 4.5vw;
     }
 
 }
