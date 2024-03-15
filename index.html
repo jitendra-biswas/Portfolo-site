@@ -19,17 +19,28 @@
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
-                <div class="elem">
-                <a href="home.html" id="home">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Skill</a>
-                <a href="#">Portfolio</a>
-                <a href="contact.html">Contact</a>
-                </div>
+
+                <ul class="elem">
+                   <li><a href="home.html" id="home">Home</a></li>
+                   <li> <a href="about.html">About</a></li>
+                   <li><a href="#">Skill</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                <ul>
                 
                 
             </div>
         </nav>
+
+       <div class="side-nav">
+        <ul>
+            <li><a href="home.html" id="home">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </div>
 
         <section>
             <div class="content1"><h3>I Am <div class="color2">Jitendra Biswas</div></h3>
@@ -70,13 +81,6 @@
         </footer>
     </main>
 
-    <script>
-        var bar = document.querySelector(".elem")
-        var btn = document.querySelector("#bar")
-        btn.addEventListener("click", function(){
-        bar.style.display = "block"
-        console.log("visible")
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

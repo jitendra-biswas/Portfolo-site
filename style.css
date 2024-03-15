@@ -7,6 +7,7 @@
 }
 main{
     background-color: #c2b8b6;
+    position: relative;
 }
 nav{
     height: 75px;
@@ -44,6 +45,7 @@ nav .logo h2{
 nav .elements .elem{
     display: flex;
     gap: 5vw;
+    list-style: none;
 }
 
 nav .elements a{
@@ -64,6 +66,34 @@ nav .elements a:hover{
 
 nav .elements #bar{
     display: none;
+}
+
+.side-nav{
+    position: absolute;
+    line-height: 10vh;
+    width: 150px;
+    background: rgba(72, 181, 177, 0.214);
+    background: linear-gradient(90deg, rgba(72, 181, 177, 0.185) 44%, rgba(103, 167, 223, 0.234) 100%);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 64.5vw;
+
+}
+
+.side-nav a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.side-nav{
+    display: none;
+}
+
+.side-nav a:hover{
+    color:#5b78f6
 }
 
 section{
@@ -250,7 +280,7 @@ button:hover{
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 5vh;
-        overflow: hidden;
+        
        
     }
 
@@ -281,12 +311,39 @@ button:hover{
     nav .elements .elem{
        display: none;
         flex-direction: column;
-        
-
     }
 
     nav .elements .elem a{
         color: white;
+        list-style: none;
+    }
+
+    .side-nav ul{
+        display: flex;
+        margin-top: -60px;
+        list-style: none;
+        flex-direction: column;
+        line-height: 7vh;
+    }
+
+    .side-nav a{
+        padding: 10px 20px;
+    }
+
+    .side-nav{
+        display: none;
+    }
+
+    .elements a{
+        display: none;
+    }
+
+    nav .elements #bar{
+        display: block;
+    }
+
+    nav{
+        padding: 0px 30px;
     }
 
     .color{
@@ -334,18 +391,6 @@ button:hover{
 
     .content2{
         display: none;
-    }
-
-    .elements a{
-        display: none;
-    }
-
-    nav .elements #bar{
-        display: block;
-    }
-
-    nav{
-        padding: 0px 30px;
     }
 
     .content1 p{
